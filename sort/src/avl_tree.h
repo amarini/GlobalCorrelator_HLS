@@ -1,23 +1,11 @@
-//left=(2*p)+1; 
-//right=(2*p)+2
-//
-//    Every node has a colour either red or black.
-//        The root of tree is always black.
-//            There are no two adjacent red nodes (A red node cannot have a red parent or red child).
-//                Every path from a node (including root) to any of its descendant NULL node has the same number of black nodes.
-//
-
 /* DEBUG
 #include <iostream>
 #include <iomanip>      // std::setw
 */
 
-#ifndef SORT2_H
-#define SORT2_H
+#ifndef AVL_H
+#define AVL_H
 
-// define colors
-//#define BLACK 0
-//#define RED 1
 
 /*
 template<typename T>
@@ -59,9 +47,9 @@ int left_rotate( int x,T arr[], int left[], int right[], int parent[],int height
     int y = right[x];
     int t2 = left[y];
 
-    int hly = (left[y] >=0) ? height[left[y]]: -1;  // T2
-    int hry = (right[y] >=0) ? height[right[y]]:-1;
-    int hlx = (left[x] >=0) ? height[left[x]]: -1;
+    //int hly = (left[y] >=0) ? height[left[y]]: -1;  // T2
+    //int hry = (right[y] >=0) ? height[right[y]]:-1;
+    //int hlx = (left[x] >=0) ? height[left[x]]: -1;
     //int hrx = (right[x] >=0) ? height[right[x]]:-1;
 
   
@@ -94,9 +82,9 @@ int right_rotate( int y,T arr[], int left[], int right[],int parent[], int heigh
     int t2 = right[x];
 
     //int hly = (left[y] >=0) ? height[left[y]]: -1;
-    int hry = (right[y] >=0) ? height[right[y]]:-1;
-    int hlx = (left[x] >=0) ? height[left[x]]: -1;
-    int hrx = (right[x] >=0) ? height[right[x]]:-1;
+    //int hry = (right[y] >=0) ? height[right[y]]:-1;
+    //int hlx = (left[x] >=0) ? height[left[x]]: -1;
+    //int hrx = (right[x] >=0) ? height[right[x]]:-1;
 
     // Perform rotation  
     right[x] = y;
