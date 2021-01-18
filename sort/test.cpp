@@ -19,10 +19,10 @@ void printArray(T arr[],int n) // DEBUG
 }
 
 //#define NTEST 100
-#define NTEST 1
+#define NTEST 100
 
-//#define N 50
 #define N 50
+//#define N 32
 #define M 32
 
 //#define N 7
