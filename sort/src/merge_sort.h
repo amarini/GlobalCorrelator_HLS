@@ -48,10 +48,10 @@ void mergeSort(T in[], T out[], int InSize, int OutSize) // InSize = OutSize
 
 }
 
-    template<typename T>
+    template<typename T,int NP>
 void sort_and_crop_ref(unsigned int nIn, unsigned int nOut, T in[], T out[]) 
 {  // just an interface
-    T outTmp[nIn];
+    T outTmp[NP];
     mergeSort(in,outTmp,nIn,nIn); 
     for(int i=0;i<nOut;++i){
         #pragma HLS unroll

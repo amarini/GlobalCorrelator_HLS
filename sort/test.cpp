@@ -4,7 +4,8 @@
 #include <iomanip>      // std::setw
 #include <algorithm>
 //#include "src/avl_tree.h"
-#include "src/bitonic_sort_new.h"
+//#include "src/bitonic_sort_new.h"
+#include "src/merge_sort.h"
 
 template<typename T>
 void printArray(T arr[],int n) // DEBUG
@@ -18,18 +19,17 @@ void printArray(T arr[],int n) // DEBUG
     std::cout<<std::endl;
 }
 
-//#define NTEST 100
 #define NTEST 100
+//#define NTEST 1
 
 #define N 50
-//#define N 32
-#define M 32
+#define M 18
 
 //#define N 7
 //#define M 4
 
 int main() {
-    srand(42);
+    srand(43);
     bool pass=true;
     for (int test = 1; test <= NTEST; ++test) {
         int arr[N];
